@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* ===================================================================
+	common pc.css
+=================================================================== */
+@import "./_base.scss";
+
+/* ----------------- Reset First ---------------- */
+.guide {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.guide_lg {
+	width: 1073px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.break_pc {
+	display: block;
+}
+.break_sp {
+	display: none;
+}
+.f_sp {
+	display: none!important;
+}
+.f_pc {
+	display: block!important;
+}
+
+/* ----------------- /. Reset First ---------------- */
+.container {
+	min-width: 1200px;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+header {
+	position: relative;
+	z-index: 9999;
+	.logo {
+
+		
+	}
+	.nav_global {
+		
+	}
+}
+.main {
+	padding: 75px 0 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+footer {
+	padding: 44px 0 48px;
+}
+.section {
+	>a {
+		display: block;
+	}
+	.btn_default {
+		display: table;
+		margin: 0 auto;
+		font-family: 'Vollkorn', serif;
+		font-size: rem(14);
+		font-style: italic;
+		color: $col_white;
+		border: solid 1px $col_white;
+		background: transparent;
+		width: 201px;
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		cursor: pointer;
+		&.btn_black {
+			color: $col_black;
+			border-color: $col_black;
+		}
+	}
+
+	.section_content {
+	
+	}
+}

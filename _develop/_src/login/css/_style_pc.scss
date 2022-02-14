@@ -1,0 +1,19 @@
+.login {
+	display: flex;
+	&-form {
+		flex: 1;
+	}
+
+	&-background {
+		figure {
+			width: 960px;
+			height: 780px;
+			background: url('../images/login-bg.png') top center;
+
+			img {
+				width: 650px;
+				height: 800px;
+			}
+		}
+	}
+}

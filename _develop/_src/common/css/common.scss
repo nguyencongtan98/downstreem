@@ -1,0 +1,533 @@
+@charset "UTF-8";
+/* ===================================================================
+	common.css
+=================================================================== */
+/*----------------------------------------------------
+	共通
+----------------------------------------------------*/
+@import "./_base.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+
+html, body {
+	font-size: 10px;
+}
+
+body,
+td,
+th,
+input,
+textarea {
+	color: $col_black;
+	@include font_default;
+	line-height: 1.5;
+}
+
+body {
+	overflow-wrap: break-word;
+	 * {
+		box-sizing: border-box;
+	 }
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover,
+a:hover img {
+	color: #000000;
+	text-decoration: none;
+	/*
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+	opacity: .80;
+*/
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:hover,
+a:hover img,
+.img_hover:hover {
+	/*
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+	opacity: .80;
+*/
+}
+
+img {
+	vertical-align: bottom;
+}
+
+.img_ck {
+	font-size: 0.1rem;
+	line-height: 0;
+}
+
+/* clearfix (micro) */
+.clearfix:before,
+.clearfix:after {
+	content: ' ';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* For IE 6/7 only */
+.clearfix {
+	*zoom: 1;
+}
+
+div,
+p {
+	/*word-break: break-all;*/
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+nav {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+/*---------------------------------------------------------------------------*/
+/* CMS用 */
+.file {
+	border-top: 1px dotted #cccccc;
+	margin: 15px 0;
+	padding: 10px 0 0;
+	text-align: left;
+}
+
+.file .pdf {
+	background: url(../images/cms/pdf.png) left center no-repeat;
+	line-height: 37px;
+	padding: 4px 0 0 40px;
+}
+
+.file .ppt {
+	background: url(../images/cms/ppt.png) left center no-repeat;
+	line-height: 37px;
+	padding: 4px 0 0 40px;
+}
+
+.file .xls,
+.file .xlsx {
+	background: url(../images/cms/xls.png) left center no-repeat;
+	line-height: 37px;
+	padding: 4px 0 0 40px;
+}
+
+.file .doc,
+.file .docx {
+	background: url(../images/cms/doc.png) left center no-repeat;
+	line-height: 37px;
+	padding: 4px 0 0 40px;
+}
+
+.top-right {
+	float: right;
+	margin: 0px 0px 30px 30px;
+}
+
+.top-left {
+	float: left;
+	margin: 0px 30px 30px 0px;
+}
+
+.top-center {
+	margin: 0px 0px 30px 0px;
+	text-align: center;
+}
+
+.bottom-right {
+	float: right;
+	margin: 30px 0px 0px 30px;
+}
+
+.bottom-left {
+	float: left;
+	margin: 30px 30px 0px 0px;
+}
+
+.bottom-center {
+	margin: 30px 0px 0px 0px;
+	text-align: center;
+}
+
+.entry-container b {
+	font-weight: bold;
+}
+
+.entry-container i {
+	font-style: italic;
+}
+
+/* margin */
+.mar_t0 {
+	margin-top: 0 !important;
+}
+.mar_t5 {
+	margin-top: 5px !important;
+}
+.mar_t10 {
+	margin-top: 10px !important;
+}
+.mar_t15 {
+	margin-top: 15px !important;
+}
+.mar_t20 {
+	margin-top: 20px !important;
+}
+.mar_t25 {
+	margin-top: 25px !important;
+}
+.mar_t30 {
+	margin-top: 30px !important;
+}
+.mar_t35 {
+	margin-top: 35px !important;
+}
+.mar_t40 {
+	margin-top: 40px !important;
+}
+.mar_t45 {
+	margin-top: 45px !important;
+}
+.mar_t50 {
+	margin-top: 50px !important;
+}
+
+.mar_b0 {
+	margin-bottom: 0 !important;
+}
+.mar_b5 {
+	margin-bottom: 5px !important;
+}
+.mar_b10 {
+	margin-bottom: 10px !important;
+}
+.mar_b15 {
+	margin-bottom: 15px !important;
+}
+.mar_b20 {
+	margin-bottom: 20px !important;
+}
+.mar_b25 {
+	margin-bottom: 25px !important;
+}
+.mar_b30 {
+	margin-bottom: 30px !important;
+}
+.mar_b35 {
+	margin-bottom: 35px !important;
+}
+.mar_b40 {
+	margin-bottom: 40px !important;
+}
+.mar_b45 {
+	margin-bottom: 45px !important;
+}
+.mar_b50 {
+	margin-bottom: 50px !important;
+}
+
+.mar_l0 {
+	margin-left: 0 !important;
+}
+.mar_l5 {
+	margin-left: 5px !important;
+}
+.mar_l10 {
+	margin-left: 10px !important;
+}
+.mar_l15 {
+	margin-left: 15px !important;
+}
+.mar_l20 {
+	margin-left: 20px !important;
+}
+.mar_l25 {
+	margin-left: 25px !important;
+}
+.mar_l30 {
+	margin-left: 30px !important;
+}
+.mar_l35 {
+	margin-left: 35px !important;
+}
+.mar_l40 {
+	margin-left: 40px !important;
+}
+.mar_l45 {
+	margin-left: 45px !important;
+}
+.mar_l50 {
+	margin-left: 50px !important;
+}
+
+.mar_r0 {
+	margin-right: 0 !important;
+}
+.mar_r5 {
+	margin-right: 5px !important;
+}
+.mar_r10 {
+	margin-right: 10px !important;
+}
+.mar_r15 {
+	margin-right: 15px !important;
+}
+.mar_r20 {
+	margin-right: 20px !important;
+}
+.mar_r25 {
+	margin-right: 25px !important;
+}
+.mar_r30 {
+	margin-right: 30px !important;
+}
+.mar_r35 {
+	margin-right: 35px !important;
+}
+.mar_r40 {
+	margin-right: 40px !important;
+}
+.mar_r45 {
+	margin-right: 45px !important;
+}
+.mar_r50 {
+	margin-right: 50px !important;
+}
+
+/* float */
+.fl_l {
+	float: left !important;
+}
+.fl_r {
+	float: right !important;
+}
+.fl_n {
+	float: none !important;
+}
+
+/* font color */
+.f_c_red {
+	color: #ff0000 !important;
+}
+.f_c_yellow {
+	color: #ffff00 !important;
+}
+.f_c_blue {
+	color: #0000ff !important;
+}
+.f_c_gray {
+	color: #cccccc !important;
+}
+.f_c_gray_2 {
+	color: #999999 !important;
+}
+
+.t_align_l {
+	text-align: left !important;
+}
+.t_align_c {
+	text-align: center !important;
+}
+.t_align_r {
+	text-align: right !important;
+}
+
+.f_weight_bold {
+	font-weight: bold !important;
+}
+.f_weight_normal {
+	font-weight: normal !important;
+}
+/*---------------------------------------------------------------------------*/
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	transition: all .45s ease;
+	outline: none;
+}
+a:focus {
+	outline: none;
+}
+.btn_alpha {
+	transition: all .45s ease;
+	transform: translate3d(0, 0, 0);
+	display: inline-block;
+}
+.btn_alpha:hover {
+	opacity: 0.8!important;
+	/* For IE8 and earlier */
+}
+.row {
+	zoom: 1;
+	position: relative;
+}
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+figure {
+	margin: 0;
+}
+table {
+	border-collapse: collapse;
+}
+.tab_main {
+	.list_tab {
+		.tab_item {
+			display: none;
+			animation-duration: 0.75s;
+			animation-fill-mode: both;
+			&.active {
+				animation-name: vanishIn;
+				-webkit-animation-name: vanishIn;
+			}
+		}
+	}
+}
+@keyframes vanishIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes hvr-icon-pop {
+	50% {
+		-webkit-transform: scale(1.45);
+		transform: scale(1.45);
+	}
+}
+/* ======================= Custom Radio, CheckBox =============================*/
+.contact_content {
+	input[type="radio"] {
+		display: none!important;
+		&+ label span {
+			background-color: #f0f0f0;
+			border: solid 4px #f0f0f0;
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			margin: -2px 12px 0 0;
+			vertical-align: middle;
+			cursor: pointer;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			padding: 0;
+		}
+		&+ label.error span {
+			background: #ff9999;
+		}
+		&:checked + label span {
+			background-color: #1d1d1d;
+		}
+	}
+
+	input[type="checkbox"] {
+		&:not(:checked), &:checked {
+			position: absolute;
+			left: -9999px;
+		}
+		&:not(:checked) + label, &:checked + label {
+			position: relative;
+			padding-left: 25px;
+			cursor: pointer;
+		}
+		&:not(:checked) + label:before, &:checked + label:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 15px;
+			height: 15px;
+			border: 1px solid #7ebffd;
+			background: #2c98fd;
+			border-radius: 3px;
+		}
+		&:not(:checked) + label:after, &:checked + label:after {
+			content: '✔';
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			font-size: 15px;
+			line-height: 0.8;
+			color: $col_white;
+			transition: all .2s;
+			font-family: arial;
+		}
+		&:not(:checked) + label:after {
+			opacity: 0;
+			transform: scale(0);
+		}
+		&:checked + label:after {
+			opacity: 1;
+			transform: scale(1);
+		}
+		&:disabled:not(:checked) + label:before,
+		&:disabled:checked + label:before {
+			box-shadow: none;
+			border-color: #bbb;
+			background-color: #ddd;
+		}
+		&:disabled:checked + label:after {
+			color: #999;
+		}
+		&:disabled + label {
+			color: #aaa;
+		}
+	}
+}
+/* ======================= /. Custom Radio, CheckBox =============================*/
+@keyframes bumpin {
+	0% { transform: scale(0,0); }
+	65%   {transform: scale(1.1,1.1); }
+	100% {transform: scale(1,1);
+	}
+}
+@media screen and (min-width: $pc_w){
+	@import "_common_pc";
+}
+
+@media screen and (max-width: $sp_w){
+	@import "_common_sp";
+}
+
+
+@import "_animate";

@@ -1,0 +1,49 @@
+/* ===================================================================
+  use Login Page
+=================================================================== */
+/*_____ font _______________*/
+/*_____ color _______________*/
+/*_____ font weight _______________*/
+/*_____ Mixin _______________*/
+@media screen and (min-width: 769px), print {
+  /* ===================================================================
+    use pc
+  =================================================================== */
+  .login {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .login-form {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .login-background figure {
+    width: 960px;
+    height: 780px;
+    background: url("../images/login-bg.png") top center;
+  }
+  .login-background figure img {
+    width: 650px;
+    height: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* ===================================================================
+    use sp
+  =================================================================== */
+  .top_area > span {
+    background: #67c6e2;
+  }
+
+  header .nav_global ul li a:before {
+    border-color: #67c6e2;
+  }
+
+  .contact_content {
+    padding: 27px 20px 25px;
+  }
+}
