@@ -111,41 +111,6 @@ li {
 	list-style: none;
 }
 
-/*---------------------------------------------------------------------------*/
-/* CMS用 */
-.file {
-	border-top: 1px dotted #cccccc;
-	margin: 15px 0;
-	padding: 10px 0 0;
-	text-align: left;
-}
-
-.file .pdf {
-	background: url(../images/cms/pdf.png) left center no-repeat;
-	line-height: 37px;
-	padding: 4px 0 0 40px;
-}
-
-.file .ppt {
-	background: url(../images/cms/ppt.png) left center no-repeat;
-	line-height: 37px;
-	padding: 4px 0 0 40px;
-}
-
-.file .xls,
-.file .xlsx {
-	background: url(../images/cms/xls.png) left center no-repeat;
-	line-height: 37px;
-	padding: 4px 0 0 40px;
-}
-
-.file .doc,
-.file .docx {
-	background: url(../images/cms/doc.png) left center no-repeat;
-	line-height: 37px;
-	padding: 4px 0 0 40px;
-}
-
 .top-right {
 	float: right;
 	margin: 0px 0px 30px 30px;
@@ -517,12 +482,15 @@ table {
 	100% {transform: scale(1,1);
 	}
 }
+
+@import "_common_pc";
+
 @media screen and (min-width: $pc_w){
-	@import "_common_pc";
+	
 }
 
 @media screen and (max-width: $sp_w){
-	@import "_common_sp";
+	//@import "_common_sp";
 }
 
 
