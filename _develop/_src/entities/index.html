@@ -32,14 +32,28 @@
   <body>
     <div id="container" class="container">
       <div class="main" id="main">
-        <div class="project-navigate">
+        <div class="entity-navigate">
           <h2>Entities</h2>
-          <div class="projects-search">
+          <div class="entity-search">
             <img
               class="icon-print"
               src="./images/print.png"
               alt="Farmers Forest Group"
             />
+            <div class="btn-add-container">
+              <img
+                class="icon-print"
+                src="./images/plus.png"
+                alt="Farmers Forest Group"
+              />
+              <button class="btn-add-entity dropbtn" onclick="myFunction()">
+                Add entity
+              </button>
+              <div id="addEntity" class="dropdown-content">
+                <a href="#home">Add new entity</a>
+                <a href="#about">Add exitsting etities</a>
+              </div>
+            </div>
             <div class="input-autocomplete">
               <input
                 id="myInput"
@@ -55,14 +69,548 @@
             />
           </div>
         </div>
+        <p class="total-entity">101,230 entities</p>
+
+        <div id="overlay"></div>
+
+        <div class="entity-list">
+          <div class="entity">
+            <div class="entity-header">
+              <img src="./images/avatar.png" alt="" />
+              <p class="entity-name">Miriam Benson</p>
+              <p class="entity-position">CFO - Ansen Ltd.</p>
+            </div>
+            <div class="entity-note">
+              <p class="entity-note-label">Note</p>
+              <p class="entity-note-content">
+                Close relationship with Marc Olsen. With company in 8 years
+              </p>
+            </div>
+            <div class="entity-contact">
+              <div class="contact-header">
+                <p class="contact-label">Associated contact</p>
+                <div class="contact-see-more" id="open">
+                  <a href="#" onclick="myFunction2()" class="dropbtn2"
+                    >See more Addresses</a
+                  >
+                  <img src="./images/see-more.png" alt="" />
+                  <div id="see-more" class="dropdown-content2 see-more">
+                    <p class="contact-item">
+                      <img src="./images/icon-phone.png" alt="" />
+                      (202) 555-1234
+                    </p>
+                    <p class="contact-item">
+                      <img src="./images/icon-mail.png" alt="" />
+                      miriam.b@gmail.com
+                    </p>
+                    <p class="contact-item">
+                      <img src="./images/icon-fb.png" alt="" />
+                      Miriam1234
+                    </p>
+                    <p class="contact-item">
+                      <img src="./images/icon-phone.png" alt="" />
+                      (202) 555-1234
+                    </p>
+                    <p class="contact-item">
+                      <img src="./images/icon-mail.png" alt="" />
+                      miriam.b@gmail.com
+                    </p>
+                    <p class="contact-item">
+                      <img src="./images/icon-fb.png" alt="" />
+                      Miriam1234
+                    </p>
+                    <p class="contact-item">
+                      <img src="./images/icon-fb.png" alt="" />
+                      Miriam1234
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-content">
+                <p class="contact-item">
+                  <img src="./images/icon-phone.png" alt="" />
+                  (202) 555-1234
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-mail.png" alt="" />
+                  miriam.b@gmail.com
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-fb.png" alt="" />
+                  Miriam1234
+                </p>
+              </div>
+            </div>
+
+            <div class="entity-statistics">
+              <p class="statistics-label">Statistics</p>
+
+              <div class="statistic-contaniner">
+                <div class="statistic-box">
+                  <div class="statistic-item">
+                    <p>eMail:</p>
+                    <span>1,547</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Images:</p>
+                    <span>134</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Mentioned:</p>
+                    <span>11,496</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Tagged items:</p>
+                    <span>256</span>
+                  </div>
+                </div>
+
+                <div class="statistic-box">
+                  <div class="statistic-item statistic-parent">
+                    <p>Chat message</p>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>IM:</p>
+                    <span>6,895</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Sender:</p>
+                    <span>3,489</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Repcipient:</p>
+                    <span>3,406</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-edit-container">
+              <button class="btn-edit-profile">Edit profile</button>
+            </div>
+          </div>
+
+          <div class="entity">
+            <div class="entity-header">
+              <img src="./images/avatar.png" alt="" />
+              <p class="entity-name">Miriam Benson</p>
+              <p class="entity-position">CFO - Ansen Ltd.</p>
+            </div>
+            <div class="entity-note">
+              <p class="entity-note-label">Note</p>
+              <p class="entity-note-content">
+                Close relationship with Marc Olsen. With company in 8 years
+              </p>
+            </div>
+            <div class="entity-contact">
+              <div class="contact-header">
+                <p class="contact-label">Associated contact</p>
+                <div class="contact-see-more">
+                  <p class="contact-see-more">See more Addresses</p>
+                  <img src="./images/see-more.png" alt="" />
+                </div>
+              </div>
+              <div class="contact-content">
+                <p class="contact-item">
+                  <img src="./images/icon-phone.png" alt="" />
+                  (202) 555-1234
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-mail.png" alt="" />
+                  miriam.b@gmail.com
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-fb.png" alt="" />
+                  Miriam1234
+                </p>
+              </div>
+            </div>
+
+            <div class="entity-statistics">
+              <p class="statistics-label">Statistics</p>
+
+              <div class="statistic-contaniner">
+                <div class="statistic-box">
+                  <div class="statistic-item">
+                    <p>eMail:</p>
+                    <span>1,547</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Images:</p>
+                    <span>134</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Mentioned:</p>
+                    <span>11,496</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Tagged items:</p>
+                    <span>256</span>
+                  </div>
+                </div>
+
+                <div class="statistic-box">
+                  <div class="statistic-item statistic-parent">
+                    <p>Chat message</p>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>IM:</p>
+                    <span>6,895</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Sender:</p>
+                    <span>3,489</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Repcipient:</p>
+                    <span>3,406</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-edit-container">
+              <button class="btn-edit-profile">Edit profile</button>
+            </div>
+          </div>
+          <div class="entity">
+            <div class="entity-header">
+              <img src="./images/avatar.png" alt="" />
+              <p class="entity-name">Miriam Benson</p>
+              <p class="entity-position">CFO - Ansen Ltd.</p>
+            </div>
+            <div class="entity-note">
+              <p class="entity-note-label">Note</p>
+              <p class="entity-note-content">
+                Close relationship with Marc Olsen. With company in 8 years
+              </p>
+            </div>
+            <div class="entity-contact">
+              <div class="contact-header">
+                <p class="contact-label">Associated contact</p>
+                <div class="contact-see-more">
+                  <p class="contact-see-more">See more Addresses</p>
+                  <img src="./images/see-more.png" alt="" />
+                </div>
+              </div>
+              <div class="contact-content">
+                <p class="contact-item">
+                  <img src="./images/icon-phone.png" alt="" />
+                  (202) 555-1234
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-mail.png" alt="" />
+                  miriam.b@gmail.com
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-fb.png" alt="" />
+                  Miriam1234
+                </p>
+              </div>
+            </div>
+
+            <div class="entity-statistics">
+              <p class="statistics-label">Statistics</p>
+
+              <div class="statistic-contaniner">
+                <div class="statistic-box">
+                  <div class="statistic-item">
+                    <p>eMail:</p>
+                    <span>1,547</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Images:</p>
+                    <span>134</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Mentioned:</p>
+                    <span>11,496</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Tagged items:</p>
+                    <span>256</span>
+                  </div>
+                </div>
+
+                <div class="statistic-box">
+                  <div class="statistic-item statistic-parent">
+                    <p>Chat message</p>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>IM:</p>
+                    <span>6,895</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Sender:</p>
+                    <span>3,489</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Repcipient:</p>
+                    <span>3,406</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-edit-container">
+              <button class="btn-edit-profile">Edit profile</button>
+            </div>
+          </div>
+          <div class="entity">
+            <div class="entity-header">
+              <img src="./images/avatar.png" alt="" />
+              <p class="entity-name">Miriam Benson</p>
+              <p class="entity-position">CFO - Ansen Ltd.</p>
+            </div>
+            <div class="entity-note">
+              <p class="entity-note-label">Note</p>
+              <p class="entity-note-content">
+                Close relationship with Marc Olsen. With company in 8 years
+              </p>
+            </div>
+            <div class="entity-contact">
+              <div class="contact-header">
+                <p class="contact-label">Associated contact</p>
+                <div class="contact-see-more">
+                  <p class="contact-see-more">See more Addresses</p>
+                  <img src="./images/see-more.png" alt="" />
+                </div>
+              </div>
+              <div class="contact-content">
+                <p class="contact-item">
+                  <img src="./images/icon-phone.png" alt="" />
+                  (202) 555-1234
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-mail.png" alt="" />
+                  miriam.b@gmail.com
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-fb.png" alt="" />
+                  Miriam1234
+                </p>
+              </div>
+            </div>
+
+            <div class="entity-statistics">
+              <p class="statistics-label">Statistics</p>
+
+              <div class="statistic-contaniner">
+                <div class="statistic-box">
+                  <div class="statistic-item">
+                    <p>eMail:</p>
+                    <span>1,547</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Images:</p>
+                    <span>134</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Mentioned:</p>
+                    <span>11,496</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Tagged items:</p>
+                    <span>256</span>
+                  </div>
+                </div>
+
+                <div class="statistic-box">
+                  <div class="statistic-item statistic-parent">
+                    <p>Chat message</p>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>IM:</p>
+                    <span>6,895</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Sender:</p>
+                    <span>3,489</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Repcipient:</p>
+                    <span>3,406</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-edit-container">
+              <button class="btn-edit-profile">Edit profile</button>
+            </div>
+          </div>
+          <div class="entity">
+            <div class="entity-header">
+              <img src="./images/avatar.png" alt="" />
+              <p class="entity-name">Miriam Benson</p>
+              <p class="entity-position">CFO - Ansen Ltd.</p>
+            </div>
+            <div class="entity-note">
+              <p class="entity-note-label">Note</p>
+              <p class="entity-note-content">
+                Close relationship with Marc Olsen. With company in 8 years
+              </p>
+            </div>
+            <div class="entity-contact">
+              <div class="contact-header">
+                <p class="contact-label">Associated contact</p>
+                <div class="contact-see-more">
+                  <p class="contact-see-more">See more Addresses</p>
+                  <img src="./images/see-more.png" alt="" />
+                </div>
+              </div>
+              <div class="contact-content">
+                <p class="contact-item">
+                  <img src="./images/icon-phone.png" alt="" />
+                  (202) 555-1234
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-mail.png" alt="" />
+                  miriam.b@gmail.com
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-fb.png" alt="" />
+                  Miriam1234
+                </p>
+              </div>
+            </div>
+
+            <div class="entity-statistics">
+              <p class="statistics-label">Statistics</p>
+
+              <div class="statistic-contaniner">
+                <div class="statistic-box">
+                  <div class="statistic-item">
+                    <p>eMail:</p>
+                    <span>1,547</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Images:</p>
+                    <span>134</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Mentioned:</p>
+                    <span>11,496</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Tagged items:</p>
+                    <span>256</span>
+                  </div>
+                </div>
+
+                <div class="statistic-box">
+                  <div class="statistic-item statistic-parent">
+                    <p>Chat message</p>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>IM:</p>
+                    <span>6,895</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Sender:</p>
+                    <span>3,489</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Repcipient:</p>
+                    <span>3,406</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-edit-container">
+              <button class="btn-edit-profile">Edit profile</button>
+            </div>
+          </div>
+          <div class="entity">
+            <div class="entity-header">
+              <img src="./images/avatar.png" alt="" />
+              <p class="entity-name">Miriam Benson</p>
+              <p class="entity-position">CFO - Ansen Ltd.</p>
+            </div>
+            <div class="entity-note">
+              <p class="entity-note-label">Note</p>
+              <p class="entity-note-content">
+                Close relationship with Marc Olsen. With company in 8 years
+              </p>
+            </div>
+            <div class="entity-contact">
+              <div class="contact-header">
+                <p class="contact-label">Associated contact</p>
+                <div class="contact-see-more">
+                  <p class="contact-see-more">See more Addresses</p>
+                  <img src="./images/see-more.png" alt="" />
+                </div>
+              </div>
+              <div class="contact-content">
+                <p class="contact-item">
+                  <img src="./images/icon-phone.png" alt="" />
+                  (202) 555-1234
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-mail.png" alt="" />
+                  miriam.b@gmail.com
+                </p>
+                <p class="contact-item">
+                  <img src="./images/icon-fb.png" alt="" />
+                  Miriam1234
+                </p>
+              </div>
+            </div>
+
+            <div class="entity-statistics">
+              <p class="statistics-label">Statistics</p>
+
+              <div class="statistic-contaniner">
+                <div class="statistic-box">
+                  <div class="statistic-item">
+                    <p>eMail:</p>
+                    <span>1,547</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Images:</p>
+                    <span>134</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Mentioned:</p>
+                    <span>11,496</span>
+                  </div>
+                  <div class="statistic-item">
+                    <p>Tagged items:</p>
+                    <span>256</span>
+                  </div>
+                </div>
+
+                <div class="statistic-box">
+                  <div class="statistic-item statistic-parent">
+                    <p>Chat message</p>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>IM:</p>
+                    <span>6,895</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Sender:</p>
+                    <span>3,489</span>
+                  </div>
+                  <div class="statistic-item statistic-child">
+                    <p>Repcipient:</p>
+                    <span>3,406</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-edit-container">
+              <button class="btn-edit-profile">Edit profile</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--#include virtual="/common/include/footer.inc"-->
-      <!-- /. Footer -->
     </div>
 
     <script src="../common/js/responsive_watcher.js"></script>
     <script src="../common/js/libs.js"></script>
-    <script src="../common/js/base.js"></script>
     <script src="./js/index.js"></script>
 
     <!--#include virtual="/common/include/ga.inc"-->
