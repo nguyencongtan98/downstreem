@@ -38,25 +38,25 @@
 							Advisory Services.
 						</p>
 						<form>
-							<div class="login-container">
+							<div class="login-form-container">
 								<div class="login-items">
-									<div>
-										<p>Username *</p>
-										<input type="text" placeholder="Enter your username..." class="ip_cm">
+									<div >
+										<p class="login-item-label">Username *</p>
+										<input class="login-item-input" type="text" placeholder="Enter your username..." class="ip_cm">
 									</div>
-									<div>
-										<p>Password *</p>
-										<input type="password" placeholder="Enter your password..." class="ip_cm">
+									<div >
+										<p class="login-item-label">Password *</p>
+										<input class="login-item-input" type="password" placeholder="Enter your password..." class="ip_cm">
 									</div>
 								</div>
-								<div class="login-items">
+								<div class="login-items-remember">
 									<div class="group_form">
 										<input type="checkbox" id="rememberme" name="rememberme">
 										<label for="rememberme">Remember me</label>
 									</div>
 									<a class="forgot-password" href="#">Forgot your password?</a>
 								</div>
-								<a href="#" class="btn-default btn-login">Login</a>
+								<button type="button" class="btn-default btn-login">Login</button>
 								<div class="login-create-account">
 									<p>Not registered yet?</p><a class="login-create-account__item" href="#">Create an
 										Account</a>
@@ -64,14 +64,14 @@
 							</div>
 						</form>
 					</div>
+					<!--#include virtual="/common/include/footer.inc"-->
 				</div>
 				<div class="login-background">
 					<figure><img src="./images/login-bg.png" alt="Downstreem login" /></figure>
 				</div>
 			</div>
 		</div>
-		<!--#include virtual="/common/include/footer.inc"-->
-		<!-- /. Footer -->
+
 	</div>
 	<script src="../common/js/responsive_watcher.js"></script>
 	<script src="../common/js/libs.js"></script>
