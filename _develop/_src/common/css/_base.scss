@@ -2,6 +2,7 @@
 
 $sp_w: 768px;
 $pc_w: 769px;
+$design_width: 1920;
 
 $config_base_fontsize : 10;
 $config_sp_scale : 2;
@@ -13,23 +14,20 @@ $sp_sprite_ratio : 2;
  @return #{$rem}rem;
 }
 
+@function vw($design_width_psd) {
+  $vw: calc($design_width_psd / $design_width * 100);
+  @return #{$vw}vw;
+}
+
 /*_____ color _______________*/
 $col_white: #ffffff;
 $col_black: #000000;
 
 //- pager
 $col_green: #229d25;
-$col_green2: #a2d468;
 $col_blue: #35c0ed;
-$col_blue2: #67c6e2;
-$col_turquoise: #2ce0c4;
-$col_turquoise2: #35d8bb;
-$col_flower: #d981ef;
-$col_flower2: #bf8af1;
-$col_pink: #fd9fb7;
-$col_yellow: #fff89d;
-$col_yellow2: #fdc75f;
-$col_grey: #f5f5f5;
+$col_grey: #8A8A8A;
+$col_grey2: #c7c7c7;
 $col_red: #d90000;
 
 /*_____ font weight _______________*/
