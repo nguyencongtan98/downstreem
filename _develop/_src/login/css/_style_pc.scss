@@ -1,55 +1,107 @@
 .login {
-	display: flex;
+  display: flex;
 
-	&-container {
-		width: 50vw;
+  &-container {
+    width: 50vw;
 
-		.login-form {
-			display: flex;
-			flex-direction: column;
-			width: vw(515);
-			margin: 100px 50px 0;
-		}
+    .login-form {
+      display       : flex;
+      flex-direction: column;
+      width         : vw(515);
+      margin        : 50px auto;
+    }
 
-		.logo {
-			width: 100px;
-			margin-bottom: 50px;
-		}
+    .logo {
+      width        : 100px;
+      margin-bottom: 20px;
+    }
 
-		.login-ttl {
-			font-family: Futura;
-			font-style: normal;
-			font-weight: $fw_5;
-			font-size: vw(52);
-		}
+    .login-ttl {
+      font-style : normal;
+      font-weight: $fw_5;
+      font-size  : vw(52);
+    }
 
-		.login-txt {
-			color: $col_grey;
-			font-size: vw(18);
-			line-height: 28px;
-		}
-	}
+    .login-txt {
+      color        : $col_grey;
+      font-size    : vw(18);
+      line-height  : vw(28);
+      margin-bottom: vw(45);
+    }
 
-	&-background {
-		width: 50vw;
-		height: 100vh;
+    .login-form-container {
+      .login-item-label {
+        font-weight   : $fw_5;
+        padding-bottom: vw(9);
+        color         : #222222;
+        font-size     : vw(14);
+      }
 
-		figure {
-			height: 100%;
+      .login-item-input {
+        line-height  : vw(64);
+        height       : vw(64);
+        width        : 100%;
+        margin-bottom: vw(24);
+        outline      : unset;
+        transition   : box-shadow 150ms ease-out;
+        border       : 1px solid #d9d9d9;
+        font-size    : vw(16);
+        display      : inline-block;
+        padding      : 5px 20px;
 
-			img {
-				width: 100%;
-				height: 100%;
-			}
-		}
-	}
-}
+        &:hover,
+        &:focus {
+          border    : 1px solid #5ba9f9;
+          box-shadow: 0px 0px 4px $col_blue;
+          outline   : unset;
+        }
+      }
 
-footer {
-	position: absolute;
-	bottom: 0;
-	left: 120px;
-	font-size: vw(16);
-	line-height: 24px;
-	color: $col_grey2;
+      .login-items-remember {
+        display        : flex;
+        justify-content: space-between;
+        color          : $col_blue;
+        font-size      : vw(14);
+        margin-bottom: 25px;
+
+        .group_form {
+          display    : flex;
+          align-items: center;
+
+          input {
+            margin-right: 3px;
+          }
+        }
+
+        a {
+          color: $col_blue;
+        }
+      }
+
+      .login-create-account {
+        display: flex;
+        font-size: vw(14);
+        margin-top: 25px;
+
+        a {
+          color       : $col_blue;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  &-background {
+    width : 50vw;
+    height: 100vh;
+
+    figure {
+      height: 100%;
+
+      img {
+        width : 100%;
+        height: 100%;
+      }
+    }
+  }
 }

@@ -20,7 +20,7 @@ th,
 input,
 textarea {
   color: #000000;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   line-height: 1.5;
 }
 
@@ -62,11 +62,6 @@ a:hover img,
 
 img {
   vertical-align: bottom;
-}
-
-.img_ck {
-  font-size: 0.1rem;
-  line-height: 0;
 }
 
 /* clearfix (micro) */
@@ -113,41 +108,6 @@ ul,
 ol,
 li {
   list-style: none;
-}
-
-/*---------------------------------------------------------------------------*/
-/* CMS用 */
-.file {
-  border-top: 1px dotted #cccccc;
-  margin: 15px 0;
-  padding: 10px 0 0;
-  text-align: left;
-}
-
-.file .pdf {
-  background: url(../images/cms/pdf.png) left center no-repeat;
-  line-height: 37px;
-  padding: 4px 0 0 40px;
-}
-
-.file .ppt {
-  background: url(../images/cms/ppt.png) left center no-repeat;
-  line-height: 37px;
-  padding: 4px 0 0 40px;
-}
-
-.file .xls,
-.file .xlsx {
-  background: url(../images/cms/xls.png) left center no-repeat;
-  line-height: 37px;
-  padding: 4px 0 0 40px;
-}
-
-.file .doc,
-.file .docx {
-  background: url(../images/cms/doc.png) left center no-repeat;
-  line-height: 37px;
-  padding: 4px 0 0 40px;
 }
 
 .top-right {
@@ -619,420 +579,76 @@ table {
             transform: scale(1, 1);
   }
 }
-@media screen and (min-width: 769px) {
-  /* ===================================================================
-    common pc.css
-  =================================================================== */
-  /*_____ font _______________*/
-  /*_____ color _______________*/
-  /*_____ font weight _______________*/
-  /*_____ Mixin _______________*/
-  /* ----------------- Reset First ---------------- */
-  .guide {
-    width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .guide_lg {
-    width: 1073px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .break_pc {
-    display: block;
-  }
-
-  .break_sp {
-    display: none;
-  }
-
-  .f_sp {
-    display: none !important;
-  }
-
-  .f_pc {
-    display: block !important;
-  }
-
-  /* ----------------- /. Reset First ---------------- */
-  .container {
-    min-width: 1200px;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-  }
-
-  header {
-    position: relative;
-    z-index: 9999;
-  }
-  .main {
-    padding: 75px 0 0;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  footer {
-    padding: 44px 0 48px;
-  }
-
-  .section > a {
-    display: block;
-  }
-  .section .btn_default {
-    display: table;
-    margin: 0 auto;
-    font-family: "Vollkorn", serif;
-    font-size: 1.4rem;
-    font-style: italic;
-    color: #ffffff;
-    border: solid 1px #ffffff;
-    background: transparent;
-    width: 201px;
-    height: 36px;
-    line-height: 36px;
-    text-align: center;
-    cursor: pointer;
-  }
-  .section .btn_default.btn_black {
-    color: #000000;
-    border-color: #000000;
-  }
+/* ===================================================================
+  common pc.css
+=================================================================== */
+/*_____ font _______________*/
+/*_____ color _______________*/
+/*_____ font weight _______________*/
+/*_____ Mixin _______________*/
+/* ----------------- Reset First ---------------- */
+.guide {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
 }
-@media screen and (max-width: 768px) {
-  /* ===================================================================
-    common sp.css
-  =================================================================== */
-  /*_____ font _______________*/
-  /*_____ color _______________*/
-  /*_____ font weight _______________*/
-  /*_____ Mixin _______________*/
-  /* ----------------- Reset First ---------------- */
-  .guide, .guide_lg {
-    margin: 0 15px;
-    overflow: hidden;
-  }
 
-  .btn_alpha {
-    display: block;
-  }
-
-  .break_pc {
-    display: none;
-  }
-
-  .break_sp {
-    display: block;
-  }
-
-  .f_sp {
-    display: block !important;
-  }
-
-  .f_pc {
-    display: none !important;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  .menu {
-    /*float: right;*/
-    margin: 10px 0px 0 0;
-    position: fixed;
-    top: 0;
-    right: 10px;
-    z-index: 9999;
-    width: 32px;
-  }
-  .menu .menu_trigger {
-    display: inline-block;
-    -webkit-transition: all 0.45s;
-    transition: all 0.45s;
-    position: relative;
-    width: 100%;
-    height: 25px;
-    left: 0;
-    text-decoration: none !important;
-  }
-  .menu .menu_trigger span {
-    display: inline-block;
-    -webkit-transition: all 0.45s;
-    transition: all 0.45s;
-    position: absolute;
-    left: 0;
-    height: 4px;
-    background-color: #000000;
-    right: 0;
-    border-radius: 5px;
-  }
-  .menu .menu_trigger span:nth-of-type(1) {
-    -webkit-animation: menu-bar01 0.65s forwards;
-            animation: menu-bar01 0.65s forwards;
-    top: 0;
-  }
-  .menu .menu_trigger span:nth-of-type(2) {
-    -webkit-transition: all 0.25s 0.05s;
-    transition: all 0.25s 0.05s;
-    opacity: 1;
-    top: 11px;
-  }
-  .menu .menu_trigger span:nth-of-type(3) {
-    -webkit-animation: menu-bar02 0.65s forwards;
-            animation: menu-bar02 0.65s forwards;
-    bottom: 0;
-  }
-  .menu.active .menu_trigger span {
-    background: #000000;
-  }
-  .menu.active .menu_trigger span:nth-of-type(1) {
-    -webkit-animation: active-menu-bar01 0.65s forwards;
-            animation: active-menu-bar01 0.65s forwards;
-  }
-  .menu.active .menu_trigger span:nth-of-type(2) {
-    opacity: 0;
-  }
-  .menu.active .menu_trigger span:nth-of-type(3) {
-    -webkit-animation: active-menu-bar03 0.65s forwards;
-            animation: active-menu-bar03 0.65s forwards;
-  }
-  @-webkit-keyframes menu-bar01 {
-    0% {
-      -webkit-transform: translateY(8px) rotate(45deg);
-              transform: translateY(8px) rotate(45deg);
-    }
-    50% {
-      -webkit-transform: translateY(8px) rotate(0);
-              transform: translateY(8px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateY(0) rotate(0);
-              transform: translateY(0) rotate(0);
-    }
-  }
-  @keyframes menu-bar01 {
-    0% {
-      -webkit-transform: translateY(8px) rotate(45deg);
-              transform: translateY(8px) rotate(45deg);
-    }
-    50% {
-      -webkit-transform: translateY(8px) rotate(0);
-              transform: translateY(8px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateY(0) rotate(0);
-              transform: translateY(0) rotate(0);
-    }
-  }
-  @-webkit-keyframes menu-bar02 {
-    0% {
-      -webkit-transform: translateY(-7px) rotate(-45deg);
-              transform: translateY(-7px) rotate(-45deg);
-    }
-    50% {
-      -webkit-transform: translateY(-7px) rotate(0);
-              transform: translateY(-7px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateY(0) rotate(0);
-              transform: translateY(0) rotate(0);
-    }
-  }
-  @keyframes menu-bar02 {
-    0% {
-      -webkit-transform: translateY(-7px) rotate(-45deg);
-              transform: translateY(-7px) rotate(-45deg);
-    }
-    50% {
-      -webkit-transform: translateY(-7px) rotate(0);
-              transform: translateY(-7px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateY(0) rotate(0);
-              transform: translateY(0) rotate(0);
-    }
-  }
-  @-webkit-keyframes active-menu-bar01 {
-    0% {
-      -webkit-transform: translateY(0) rotate(0);
-              transform: translateY(0) rotate(0);
-    }
-    50% {
-      -webkit-transform: translateY(8px) rotate(0);
-              transform: translateY(8px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateY(8px) rotate(45deg);
-              transform: translateY(8px) rotate(45deg);
-    }
-  }
-  @keyframes active-menu-bar01 {
-    0% {
-      -webkit-transform: translateY(0) rotate(0);
-              transform: translateY(0) rotate(0);
-    }
-    50% {
-      -webkit-transform: translateY(8px) rotate(0);
-              transform: translateY(8px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateY(8px) rotate(45deg);
-              transform: translateY(8px) rotate(45deg);
-    }
-  }
-  @-webkit-keyframes active-menu-bar03 {
-    0% {
-      -webkit-transform: translateY(0) rotate(0);
-              transform: translateY(0) rotate(0);
-    }
-    50% {
-      -webkit-transform: translateY(-13px) rotate(0);
-              transform: translateY(-13px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateY(-13px) rotate(-45deg);
-              transform: translateY(-13px) rotate(-45deg);
-    }
-  }
-  @keyframes active-menu-bar03 {
-    0% {
-      -webkit-transform: translateY(0) rotate(0);
-              transform: translateY(0) rotate(0);
-    }
-    50% {
-      -webkit-transform: translateY(-13px) rotate(0);
-              transform: translateY(-13px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateY(-13px) rotate(-45deg);
-              transform: translateY(-13px) rotate(-45deg);
-    }
-  }
-  .menu.black .menu_trigger span {
-    background-color: #000000;
-  }
-
-  /* ----------------- /. Reset First ---------------- */
-  .container {
-    min-width: 0;
-    padding: 0;
-    position: relative;
-  }
-
-  header {
-    position: relative;
-    z-index: 9999;
-  }
-  header .logo {
-    position: absolute;
-    padding: 1px 0 0 4px;
-    /*  &:before {
-        content: '';
-        position: absolute;
-        top: -440px;
-        left: -290px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 230px 300px 230px;
-        border-color: transparent transparent $col_white transparent;
-        transform: rotate(-38deg);
-        opacity: 0;
-      }*/
-  }
-  header .logo img {
-    -webkit-transform-origin: center;
-        -ms-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-            transform: scale(0);
-    width: 93px;
-  }
-  header .logo.show img {
-    -webkit-animation-name: bumpin;
-            animation-name: bumpin;
-    -webkit-animation-duration: 0.75s;
-            animation-duration: 0.75s;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
-    -webkit-animation-delay: 0.55s;
-            animation-delay: 0.55s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-direction: normal;
-            animation-direction: normal;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  header .logo.show::before {
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    opacity: 1;
-    top: -145px;
-  }
-  @-webkit-keyframes bumpin {
-    0% {
-      -webkit-transform: scale(0, 0);
-              transform: scale(0, 0);
-    }
-    65% {
-      -webkit-transform: scale(1.1, 1.1);
-              transform: scale(1.1, 1.1);
-    }
-    100% {
-      -webkit-transform: scale(1, 1);
-              transform: scale(1, 1);
-    }
-  }
-  @keyframes bumpin {
-    0% {
-      -webkit-transform: scale(0, 0);
-              transform: scale(0, 0);
-    }
-    65% {
-      -webkit-transform: scale(1.1, 1.1);
-              transform: scale(1.1, 1.1);
-    }
-    100% {
-      -webkit-transform: scale(1, 1);
-              transform: scale(1, 1);
-    }
-  }
-  footer {
-    padding: 38px 0 47px;
-  }
-
-  .section > a {
-    display: block;
-  }
-  .section .btn_default {
-    display: table;
-    margin: 0 auto;
-    font-family: "Vollkorn", serif;
-    font-size: 1.68rem;
-    font-style: italic;
-    color: #ffffff;
-    border: solid 1px #ffffff;
-    background: transparent;
-    max-width: 254px;
-    display: block;
-    height: 36px;
-    line-height: 36px;
-    text-align: center;
-    cursor: pointer;
-  }
-  .section .btn_default.btn_black {
-    color: #000000;
-    border-color: #000000;
-  }
-  .animated {
-    opacity: 1 !important;
-  }
+.guide_lg {
+  width: 1073px;
+  margin: 0 auto;
+  overflow: hidden;
 }
+
+.break_pc {
+  display: block;
+}
+
+.break_sp {
+  display: none;
+}
+
+.f_sp {
+  display: none !important;
+}
+
+.f_pc {
+  display: block !important;
+}
+
+/* ----------------- /. Reset First ---------------- */
+.container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.main {
+  padding: 0;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 0;
+  font-size: 0.8333333333vw;
+  line-height: 24px;
+  color: #c7c7c7;
+  margin-top: 5.2083333333vw;
+}
+
+.btn-default {
+  width: 100%;
+  background: #1580ef;
+  border-radius: 3px;
+  border: 1px solid #1580ef;
+  padding: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.8333333333vw;
+  height: 3.3333333333vw;
+  cursor: pointer;
+}
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.2

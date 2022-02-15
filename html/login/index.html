@@ -19,8 +19,8 @@
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="../common/css/normalize.css?v=0bf1e14cd716c5026d9ed77345664f2c">
-  <link rel="stylesheet" href="../common/css/common.css?v=fb739e2756a207595566f7a535443ab3">
-  <link rel="stylesheet" href="./css/style.css?v=550f0414fc4db123adfafb6ba6e65f72">
+  <link rel="stylesheet" href="../common/css/common.css?v=eb1d6de3682e2c357cc3e8c93276b76e">
+  <link rel="stylesheet" href="./css/style.css?v=8bef6906310be28c56c5fd1b8b76c13b">
 
 </head>
 
@@ -28,48 +28,50 @@
   <div id="container" class="container">
     <div class="main" id="main">
       <div class="login">
-        <div class="login-form">
-          <h1 class="logo"><a href="/" class="btn_alpha"><img src="/common/images/logo.png"
-                alt="Farmers Forest Group"></a></h1>
-          <h2 class="login-ttl">Login</h2>
-          <p class="login-txt">
-            DOWNSTREEM is a professional digital forensics practice, specializing in Data Forensics and
-            Advisory Services.
-          </p>
-          <form>
-            <div class="login-container">
-              <div class="login-items">
-                <div>
-                  <p>Username *</p>
-                  <input type="text" placeholder="Enter your username..." class="ip_cm">
+        <div class="login-container">
+          <div class="login-form">
+            <h1 class="logo"><a href="/" class="btn_alpha"><img src="/common/images/logo.png"
+                  alt="Farmers Forest Group"></a></h1>
+            <h2 class="login-ttl">Login</h2>
+            <p class="login-txt">
+              DOWNSTREEM is a professional digital forensics practice,<br> specializing in Data Forensics and
+              Advisory Services.
+            </p>
+            <form>
+              <div class="login-form-container">
+                <div class="login-items">
+                  <div >
+                    <p class="login-item-label">Username *</p>
+                    <input class="login-item-input" type="text" placeholder="Enter your username..." class="ip_cm">
+                  </div>
+                  <div >
+                    <p class="login-item-label">Password *</p>
+                    <input class="login-item-input" type="password" placeholder="Enter your password..." class="ip_cm">
+                  </div>
                 </div>
-                <div>
-                  <p>Password *</p>
-                  <input type="password" placeholder="Enter your password..." class="ip_cm">
+                <div class="login-items-remember">
+                  <div class="group_form">
+                    <input type="checkbox" id="rememberme" name="rememberme">
+                    <label for="rememberme">Remember me</label>
+                  </div>
+                  <a class="forgot-password" href="#">Forgot your password?</a>
+                </div>
+                <button type="button" class="btn-default btn-login">Login</button>
+                <div class="login-create-account">
+                  <p>Not registered yet?</p><a class="login-create-account__item" href="#">Create an
+                    Account</a>
                 </div>
               </div>
-              <div class="login-items">
-                <div class="group_form">
-                  <input type="checkbox" id="rememberme" name="rememberme">
-                  <label for="rememberme">Remember me</label>
-                </div>
-                <a class="forgot-password" href="#">Forgot your password?</a>
-              </div>
-              <a href="#" class="btn-default btn-login">Login</a>
-              <div class="login-create-account">
-                <p>Not registered yet?</p><a class="login-create-account__item" href="#">Create an
-                  Account</a>
-              </div>
-            </div>
-          </form>
+            </form>
+            <!--#include virtual="/common/include/footer.inc"-->
+          </div>
         </div>
         <div class="login-background">
-          <figure><img src="./images/man.png?v=9cd60b842d980e3db7471686337a38e6" alt="Downstreem login" /></figure>
+          <figure><img src="./images/login-bg.png?v=b3eff60391a29281acfc4edd9c809a17" alt="Downstreem login" /></figure>
         </div>
       </div>
     </div>
-    <!--#include virtual="/common/include/footer.inc"-->
-    <!-- /. Footer -->
+
   </div>
   <script src="../common/js/responsive_watcher.js?v=4dc0f121e0bb1b76044771594d1bee0d"></script>
   <script src="../common/js/libs.js?v=3e4bb227fb55271bfe9c9d4a09147bd8"></script>
